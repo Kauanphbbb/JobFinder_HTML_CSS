@@ -287,18 +287,18 @@ nav:after {
   padding: 15em 0;
 }
 
-#send-jobs-container h2,
-#send-jobs-container p {
+#send-jobs-inner h2,
+#send-jobs-inner p {
   width: 600px;
   color: #fff;
 }
 
-#send-jobs-container h2 {
+#send-jobs-inner h2 {
   font-size: 36px;
   margin-bottom: 50px;
 }
 
-#send-jobs-container p {
+#send-jobs-inner p {
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -518,21 +518,22 @@ footer li {
   float: left;
 }
 
-footer .wrapper:after{
+footer .wrapper:after {
   clear: both;
   content: "";
   display: block;
 }
 
 .company-footer {
-  width: 80%; 
+  width: 80%;
 }
 
 .company-footer h2 {
   margin-top: 20px;
 }
 
-.company-footer h2, .company-footer p {
+.company-footer h2,
+.company-footer p {
   margin-bottom: 20px;
 }
 
@@ -576,7 +577,7 @@ footer .wrapper:after{
 }
 
 .footer-bottom {
-  border-top: 1px solid #B2B2B2;
+  border-top: 1px solid #b2b2b2;
 }
 
 .footer-bottom p {
@@ -589,7 +590,7 @@ footer .wrapper:after{
     position: absolute;
     left: 50px;
   }
-  
+
   .nav-container ul {
     float: none;
     text-align: center;
@@ -617,7 +618,8 @@ footer .wrapper:after{
     margin-right: auto;
   }
 
-  #search-form form input, #search-form form select {
+  #search-form form input,
+  #search-form form select {
     display: block;
     margin: 0;
     margin-bottom: 25px;
@@ -626,5 +628,61 @@ footer .wrapper:after{
     padding: 10px 20px;
     box-sizing: border-box;
   }
+  #lastjobs-container.wrapper,
+  #status-container.wrapper,
+  #lastjobs-container.wrapper,
+  #blog-container.wrapper,
+  .wrapper {
+    max-width: 960px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .company-box {
+    width: 46%;
+    padding-left: 1em;
+  }
+
+  .company-box .company-info h3 {
+    font-size: 1em;
+  }
+
+  .company-box .company-info p,
+  .locality i,
+  .locality p,
+  .job-type span {
+    font-size: 0.8em;
+  }
+
+  .job-type {
+    right: 1em;
+  }
+
+  #send-jobs-inner h2,
+  #send-jobs-inner p {
+    text-shadow: 0.5px 0.5px #000;
+  }
+
+  .status-box {
+    width: 49.4%;
+    border: none;
+  }
+
+  .status-box:nth-child(1),
+  .status-box:nth-child(3) {
+    border-right: 1px solid #dddddd;
+  }
+
+  .testmony-box {
+    width: 49.4%;
+  }
+
+  .article-box {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin-bottom: 3em;
+  }
 }
