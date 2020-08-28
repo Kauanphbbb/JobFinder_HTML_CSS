@@ -89,6 +89,8 @@ nav:after {
   color: #3381f3;
 }
 
+/*Main Banner da página principal*/
+
 #main-banner {
   background: url("../img/banner6.jpg");
   background-size: cover;
@@ -140,6 +142,8 @@ nav:after {
   background-color: #2b79eb;
 }
 
+/*Seção de últimas vagas*/
+
 #lastjobs-container {
   text-align: center;
   padding: 100px 0;
@@ -183,6 +187,8 @@ nav:after {
   height: 100%;
 }
 
+/*Company Image*/
+
 .company-box {
   display: inline-block;
   width: 50%;
@@ -212,6 +218,8 @@ nav:after {
   font-weight: bold;
 }
 
+/*Company locality*/
+
 .locality {
   color: #6d6d6d;
   display: inline-block;
@@ -229,6 +237,8 @@ nav:after {
 .locality i {
   margin-right: 5px;
 }
+
+/*Company jpb type*/
 
 .job-type {
   display: inline-block;
@@ -408,6 +418,7 @@ nav:after {
   font-style: italic;
 }
 
+/*Triângulo da caixinha de fala*/
 .testmony-msg:after {
   content: "";
   width: 0;
@@ -589,6 +600,72 @@ footer .wrapper:after {
   font-weight: 600;
   margin-top: 40px;
 }
+
+/*find jobs page*/
+#find-jobs #search-form {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: #3381f3;
+  border-top: 5px solid #0000e6;
+}
+
+#find-jobs #lastjobs-container {
+  margin-top: 3em;
+}
+
+#find-jobs #search-form input,
+#find-jobs #search-form select {
+  width: 20%;
+}
+
+#find-jobs #search-form input [type="submit"] {
+  background-color: #fff;
+  color: #3381f3;
+}
+
+#find-jobs #last-jobs-container ul {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+}
+
+#type-filter {
+  text-align: left;
+}
+
+#find-jobs #type-filter ul {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  border-right: 1px solid #cccccc;
+}
+
+#find-jobs #type-filter ul li {
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding-left: 1em;
+}
+
+#find-jobs #type-filter ul li:nth-child(1),
+#find-jobs #type-filter ul li:nth-child(2),
+#find-jobs #type-filter ul li:nth-child(3) {
+  border-right: none;
+}
+
+#find-jobs #type-filter label {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+/*Responsivo*/
 
 @media screen and (max-width: 1024px) {
   #logo {
